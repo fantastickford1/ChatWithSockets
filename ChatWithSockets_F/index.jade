@@ -1,0 +1,65 @@
+
+doctype html
+html
+    head
+        //meta#charset=utf-8
+        title ChatApp
+        script( src="/scripts/jquery.min.js")
+        link(rel="stylesheet", href="/stylesheets/styles.css")
+        link(rel="stylesheet",type="text/css", href="/material/material.min.css")
+        script(defer src="/material/material.min.js")
+        script(src="/scriptsApp/scriptsApp.js")
+        script(src="/socket.io/socket.io.js")
+        
+    body.mdl-color--blue-grey-100
+        //h2 ChatApp with Express.js & Node.js
+        
+        .mdl-grid
+            .mdl-cell.mdl-cell--12-col
+                h2 titulo
+        .mdl-grid
+            .mdl-cell.mdl-cell--6-col
+                h3(align="center") Universidad politecnica de chiapas
+                h4(align="center") Ingenieria en desarrollo de software
+                h5(align="center") Desarrollo de Sistemas Cliente/servidor
+            .mdl-cell.mdl-cell--6-col
+                .mdl-grid
+                    .mdl-cell--3-offset
+                        #nickWrap
+                            p Enter a user name
+                            span#nickError
+                            form#setNick
+                                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                                    input#nickname(type="text").mdl-textfield__input
+                                    label(for="nickname").mdl-textfield__label Name
+                                button#nickButton(type="submit").mdl-button.mdl-js-button.mdl-js-ripple-effect Enter
+                        
+                .mdl-grid
+                    .mdl-cell--3-offset
+                        form(id="")
+                            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                                input#mtcl(type="text").mdl-textfield__input
+                                label(for="mtcl").mdl-textfield__label Matricula
+                            .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                                input#name(type="text").mdl-textfield__input
+                                label(for="name").mdl-textfield__label Nombre
+                
+        
+        //    
+        .mdl-grid
+            .mdl-cell.mdl-cell--4-offset
+                #users
+        
+        .mdl-grid
+            .mdl-cell.mdl-cell--1-col
+            .mdl-cell.mdl-cell--10-col
+                #contentWrap
+                    #chatWrap
+                        #chat
+                        form#send-message
+                            .mdl-textfield.mdl-js-textfield
+                                input(type="text", id="message").mdl-textfield__input
+                                label(for="message").mdl-textfield__label Message
+                            button(type="submit").mdl-button.mdl-js-button.mdl-button--raised Enviar
+            .mdl-cell.mdl-cell--1-col
+                                

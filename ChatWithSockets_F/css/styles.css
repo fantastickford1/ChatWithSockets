@@ -1,0 +1,19 @@
+#chat{
+    height: 500px;
+}
+#chatWrap{
+    border: 1px #000 solid;
+}
+#contentWrap{
+        display: none;
+}
+.error{
+    color: red;
+}
+#nickError{
+    color: red;
+}
+
+.whisper{
+    color: grey;
+}
