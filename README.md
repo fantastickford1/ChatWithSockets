@@ -1,7 +1,7 @@
 # ChatWithSockets
 For Client/Server Class
 
-You can find to folders in this project which contain the files to run the chat, one was code with Freddy's computer and the other with Carlos'.
+You can find two folders in this project which contain the files to run the chat, one was code with Freddy's computer and the other with Carlos'.
 
 You need to install Node.js, npm and mongodb in order to run the chats
 
