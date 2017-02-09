@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Chat with socket.io, node.js and express
+    link( rel="stylesheet", href="/material-lite/material.min.css")
+    link( rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    link( rel="stylesheet" href="/style/style.css")
+    script( src="/jquery/jquery.min.js")
+    script( src="/material-lite/material.min.js")
+    script( src="/socket.io/socket.io.js")
+    script( src="/script/functions.js")
+  body
+    div#nickWrap
+      p Enter a username
+      p#nickError
+      form#setNick
+        input#nickname
+        input( type="submit")
+    div#contentWrap
+      div#chatWrap
+        div( id="chat")
+        form( id="send-message")
+          div( class="mdl-textfield mdl-js-textfield inputsty")
+            input( class="mdl-textfield__input" type="text" size="35" id="message")
+            label( class="mdl-textfield__label" for="message") Write
+          input( class="mdl-button mdl-js-button mdl-button--raised" type="submit")
+      div#users

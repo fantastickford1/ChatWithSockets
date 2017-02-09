@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat with socket.io, node.js and express</title>
+    <link rel="stylesheet" href="/material-lite/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/material-lite/material.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script/functions.js"></script>
+  </head>
+  <body>
+    <div id="nickWrap">
+      <p>Enter a username</p>
+      <p id="nickError"></p>
+      <form id="setNick">
+        <input id="nickname">
+        <input type="submit">
+      </form>
+    </div>
+    <div id="contentWrap">
+      <div id="chatWrap">
+        <div id="chat"></div>
+        <form id="send-message">
+          <div class="mdl-textfield mdl-js-textfield inputsty">
+            <input class="mdl-textfield__input" type="text" size="35" id="message">
+            <label class="mdl-textfield__label" for="message">Write</label>
+          </div>
+          <input class="mdl-button mdl-js-button mdl-button--raised" type="submit">
+        </form>
+      </div>
+      <div id="users"></div>
+    </div>
+  </body>
+</html>
